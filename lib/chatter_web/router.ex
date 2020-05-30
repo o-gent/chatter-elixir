@@ -17,7 +17,9 @@ defmodule ChatterWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/room/:id", RoomController, :index
+    post "/join", PageController, :join
+    get "/room/:room_id", PageController, :room
+    get "/room", PageController, :room_lobby
   end
 
   # Other scopes may use custom stacks.

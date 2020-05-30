@@ -1,0 +1,5 @@
+<%# Display the username and room id then the list of users currently in the room %>
+
+<% @room_id %>
+
+<% @user %>
